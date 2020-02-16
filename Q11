@@ -1,0 +1,45 @@
+int numChars = 26;
+
+void printSortedStrings(int remaining)
+{
+printSortedStrings(remaining, "");
+}
+
+void printSortedStrings(int remaining, String prefix){
+if(remaining == 0)
+{
+if(isInorder(prefix)) {
+System.out.println(prefix);
+}
+} else {
+for(int i = 0; i < numChars; i++)
+{
+char c = ithletter(i);
+printSortedStrings(remaining - 1; prefix + c);
+}
+}
+}
+
+
+boolean isInorder(String s)
+{
+for (int i = 1; i < s.length(); i++)
+{
+int prev = ithletter(s.charAt(i - 1));
+int curr = ithletter(s.charAt(i));
+if (prev > curr)
+{
+return false;
+}
+}
+return true;
+}
+
+char ithletter(int i) {
+return (char) ((int) 'a') + i);
+}
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ans = O(kc^k)
