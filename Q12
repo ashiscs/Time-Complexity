@@ -1,0 +1,19 @@
+int intersection(int[] a, int[] b)
+{
+mergesort(b);
+int intersect = 0;
+
+for (int x : a) {
+if(binarySearch(b, x) >= 0) {
+intersect++;
+}
+}
+
+return intersect;
+}
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ans = O(b log b + a log b)
