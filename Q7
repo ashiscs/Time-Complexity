@@ -1,0 +1,4 @@
+If a binary search tree is not balanced, how long might it take (worst care) to find an element in it?
+
+
+Ans = O(n)
